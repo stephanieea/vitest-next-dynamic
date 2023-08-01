@@ -1,18 +1,26 @@
 {
-  "name": "my-todo-app",
+  "name": "vitest-next-dynamic",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "vitest run --reporter verbose"
   },
   "dependencies": {
+    "@testing-library/react": "^14.0.0",
     "eslint": "8.46.0",
     "eslint-config-next": "13.4.12",
     "next": "13.4.12",
     "react": "18.2.0",
     "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@vitejs/plugin-react": "^4.0.4",
+    "jsdom": "^22.1.0",
+    "vitest": "^0.33.0"
   }
 }
